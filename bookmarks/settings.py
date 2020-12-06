@@ -32,7 +32,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-bookmarks.mbassale.cl', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -44,8 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.postgres',
-    'account.apps.AccountConfig',
     'django.contrib.admin',
+    'social_django',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [

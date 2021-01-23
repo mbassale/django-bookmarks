@@ -98,6 +98,7 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
 ]
 
 # Password validation
@@ -158,3 +159,5 @@ LOGOUT_URL = 'logout'
 SOCIAL_AUTH_FACEBOOK_KEY = env('FACEBOOK_KEY')
 SOCIAL_AUTH_FACEBOOK_SECRET = env('FACEBOOK_SECRET')
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_TWITTER_KEY = env('TWITTER_KEY')
+SOCIAL_AUTH_TWITTER_SECRET = env('TWITTER_SECRET')
